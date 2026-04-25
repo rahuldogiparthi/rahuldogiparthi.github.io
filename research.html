@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Hewitt Lab | UNMC</title>
+  <meta name="description" content="Research programs at the Hewitt Lab spanning cardiac genomics, pulmonary disease, and computational method development." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header solid" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Hewitt Lab</span>
+          <span class="logo-sub">UNMC &nbsp;|&nbsp; Cardiac &amp; Pulmonary</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link active">Research</a>
+        <a href="tools.html" class="nav-link">Tools &amp; Technologies</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="team.html" class="nav-link">Lab Members</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary btn--sm header-cta">Join the Lab</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
+    <a href="index.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
+    <a href="research.html" class="nav-link active" style="font-size:1.1rem;color:white">Research</a>
+    <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a>
+    <a href="publications.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Publications</a>
+    <a href="team.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
+    <a href="contact.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Our Work</span>
+      <h1 class="page-hero-title">Research Programs</h1>
+      <p class="page-hero-desc">
+        We apply cutting-edge genomic and computational approaches to understand
+        how cells in the heart and lung respond to stress, disease, and
+        therapeutic intervention.
+      </p>
+    </div>
+  </section>
+
+  <!-- Research Overview -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="text-center" style="max-width:680px; margin:0 auto 3.5rem;">
+        <span class="section-label">Overview</span>
+        <h2 class="section-title">An Integrative Approach to Disease Biology</h2>
+        <p class="section-subtitle">
+          Our research spans molecular, cellular, and systems levels of analysis.
+          By combining experimental genomics with computational modeling, we generate
+          mechanistic hypotheses that are testable and translatable.
+        </p>
+      </div>
+
+      <!-- Stats row -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-bottom:5rem;">
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; font-weight:700; color:var(--teal-dark);">4</div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Research Areas</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; font-weight:700; color:var(--teal-dark);">5</div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Active Grants</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; font-weight:700; color:var(--teal-dark);">8+</div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Clinical Collaborators</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; font-weight:700; color:var(--teal-dark);">40+</div>
+          <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Publications</div>
+        </div>
+      </div>
+
+      <!-- Research Areas -->
+      <div id="cardiac" class="research-area fade-in">
+        <div class="research-area-img">
+          <!-- PLACEHOLDER: Replace with public/research-cardiac.jpg -->
+          <img
+            src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=800&q=80"
+            alt="Cardiac tissue research"
+          />
+        </div>
+        <div class="research-area-text">
+          <span class="tag">Research Area 01</span>
+          <h2>Cardiac Genomics and Heart Failure</h2>
+          <p>
+            Heart failure remains a leading cause of morbidity and mortality worldwide.
+            Our lab leverages single-nucleus RNA sequencing (snRNA-seq) and ATAC-seq
+            to profile the transcriptional and chromatin accessibility landscape across
+            all major cell types of the human heart.
+          </p>
+          <p>
+            We are particularly interested in how cardiomyocytes, fibroblasts,
+            endothelial cells, and immune populations respond to pressure overload
+            and ischemic injury, and how intercellular communication networks become
+            dysregulated in the failing myocardium.
+          </p>
+          <div class="method-list">
+            <span class="tag">snRNA-seq</span>
+            <span class="tag">snATAC-seq</span>
+            <span class="tag">Cell-cell Signaling</span>
+            <span class="tag">Trajectory Analysis</span>
+            <span class="tag">Heart Failure Models</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="pulmonary" class="research-area fade-in">
+        <div class="research-area-text">
+          <span class="tag">Research Area 02</span>
+          <h2>Pulmonary Disease and Vascular Remodeling</h2>
+          <p>
+            Lung diseases such as pulmonary arterial hypertension (PAH), pulmonary
+            fibrosis, and COPD involve profound remodeling of the vascular, epithelial,
+            and interstitial compartments. We study these processes using spatial
+            transcriptomics and multi-modal single-cell profiling of human lung biospecimens.
+          </p>
+          <p>
+            Our work aims to map the cell-type-specific gene expression programs driving
+            vascular lesion formation and fibrotic niche establishment, identifying
+            candidate therapeutic targets in disease-relevant cell states.
+          </p>
+          <div class="method-list">
+            <span class="tag">Spatial Transcriptomics</span>
+            <span class="tag">Visium / Xenium</span>
+            <span class="tag">PAH Models</span>
+            <span class="tag">IPF Biology</span>
+            <span class="tag">Vascular Biology</span>
+          </div>
+        </div>
+        <div class="research-area-img">
+          <!-- PLACEHOLDER: Replace with public/research-pulmonary.jpg -->
+          <img
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+            alt="Pulmonary research"
+          />
+        </div>
+      </div>
+
+      <div id="methods" class="research-area fade-in">
+        <div class="research-area-img">
+          <!-- PLACEHOLDER: Replace with public/research-computational.jpg -->
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+            alt="Computational biology and data science"
+          />
+        </div>
+        <div class="research-area-text">
+          <span class="tag">Research Area 03</span>
+          <h2>Computational Method Development</h2>
+          <p>
+            Biological insight from high-dimensional genomic data requires robust
+            analytical frameworks. Our lab actively develops open-source software
+            for preprocessing, dimensionality reduction, cluster annotation,
+            and regulatory network inference from single-cell and bulk omics data.
+          </p>
+          <p>
+            We apply and extend methods from machine learning, graph theory, and
+            Bayesian statistics to address specific challenges posed by sparse,
+            noisy, and high-dimensional biological measurements.
+          </p>
+          <div class="method-list">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Multi-omics Integration</span>
+            <span class="tag">Network Inference</span>
+            <span class="tag">Benchmarking</span>
+            <span class="tag">Python / R</span>
+          </div>
+          <div style="margin-top:1.5rem;">
+            <a href="tools.html" class="btn btn--primary btn--sm">View Our Tools</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="translational" class="research-area fade-in">
+        <div class="research-area-text">
+          <span class="tag">Research Area 04</span>
+          <h2>Translational and Clinical Genomics</h2>
+          <p>
+            In close collaboration with clinicians at Nebraska Medicine and
+            national consortium partners, we apply genomic methods directly
+            to patient-derived biospecimens. This translational focus allows
+            us to validate findings from model systems and prioritize
+            mechanistically relevant targets for intervention.
+          </p>
+          <p>
+            Current collaborative programs include cardiac surgery biobanking,
+            lung transplant genomics, and GWAS-to-function studies linking
+            common genetic variants to cardiovascular risk.
+          </p>
+          <div class="method-list">
+            <span class="tag">Human Biospecimens</span>
+            <span class="tag">GWAS</span>
+            <span class="tag">eQTL Mapping</span>
+            <span class="tag">Biobank Integration</span>
+            <span class="tag">Nebraska Medicine</span>
+          </div>
+        </div>
+        <div class="research-area-img">
+          <!-- PLACEHOLDER: Replace with public/research-translational.jpg -->
+          <img
+            src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=800&q=80"
+            alt="Translational research and clinical collaboration"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaborators -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="text-center" style="max-width:560px; margin:0 auto 3rem;">
+        <span class="section-label">Partnerships</span>
+        <h2 class="section-title">Collaborators and Consortia</h2>
+        <p class="section-subtitle">We work closely with clinical, basic science, and computational partners locally and nationally.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.75rem;">
+          <div style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Nebraska Medicine</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            Clinical cardiology and pulmonology collaborators providing patient biospecimens and co-investigating translational hypotheses.
+          </p>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.75rem;">
+          <div style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">NIH-Funded Consortia</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            Active participation in NHLBI-funded networks for cardiovascular genomics and lung disease research.
+          </p>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.75rem;">
+          <div style="font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Computational Biology Partners</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            Collaborative method development with computational biology groups at peer institutions and national bioinformatics centers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Want to Collaborate or Learn More?</h2>
+          <p>We are always open to new scientific collaborations and are happy to discuss potential partnerships.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn--primary">Contact Us</a>
+          <a href="publications.html" class="btn btn--outline-white">See Our Publications</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="margin-bottom:1rem; display:inline-flex;">
+            <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg></div>
+            <div class="logo-text"><span class="logo-name">Hewitt Lab</span><span class="logo-sub">UNMC</span></div>
+          </a>
+          <p class="footer-tagline">Integrative computational biology for cardiac and pulmonary disease research at UNMC.</p>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="tools.html">Tools &amp; Technologies</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html">Lab Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Research</h4><ul>
+          <li><a href="#cardiac">Cardiac Genomics</a></li>
+          <li><a href="#pulmonary">Pulmonary Disease</a></li>
+          <li><a href="#methods">Computational Methods</a></li>
+          <li><a href="#translational">Translational Research</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <address>University of Nebraska<br/>Medical Center<br/>Omaha, NE 68198<br/><br/><a href="mailto:hewittlab@unmc.edu">hewittlab@unmc.edu</a></address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Hewitt Lab &ndash; University of Nebraska Medical Center.</span>
+        <div style="display:flex; gap:1.5rem;"><a href="#">Privacy Policy</a><a href="https://www.unmc.edu" target="_blank">UNMC.edu</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav  = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+    });
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

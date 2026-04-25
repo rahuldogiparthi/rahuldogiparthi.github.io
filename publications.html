@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Hewitt Lab | UNMC</title>
+  <meta name="description" content="Peer-reviewed publications and preprints from the Hewitt Lab at UNMC." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header solid" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Hewitt Lab</span>
+          <span class="logo-sub">UNMC &nbsp;|&nbsp; Cardiac &amp; Pulmonary</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="tools.html" class="nav-link">Tools &amp; Technologies</a>
+        <a href="publications.html" class="nav-link active">Publications</a>
+        <a href="team.html" class="nav-link">Lab Members</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary btn--sm header-cta">Join the Lab</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
+    <a href="index.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
+    <a href="research.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Research</a>
+    <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a>
+    <a href="publications.html" class="nav-link active" style="font-size:1.1rem;color:white">Publications</a>
+    <a href="team.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
+    <a href="contact.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Scholarly Output</span>
+      <h1 class="page-hero-title">Publications</h1>
+      <p class="page-hero-desc">
+        Peer-reviewed articles, preprints, and reviews from the Hewitt Lab.
+        For a complete and current list, see our
+        <a href="https://scholar.google.com" target="_blank" style="color:var(--teal);">Google Scholar</a> profile.
+      </p>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section section--light">
+    <div class="container">
+
+      <!-- Filter + Search row -->
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+        <div class="pub-filter" id="filterBar">
+          <button class="filter-btn active" data-year="all">All Years</button>
+          <button class="filter-btn" data-year="2025">2025</button>
+          <button class="filter-btn" data-year="2024">2024</button>
+          <button class="filter-btn" data-year="2023">2023</button>
+          <button class="filter-btn" data-year="2022">2022</button>
+          <button class="filter-btn" data-year="2021">2021</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <input
+            type="text"
+            id="pubSearch"
+            placeholder="Search publications..."
+            style="padding:9px 14px; border:1.5px solid var(--gray-200); border-radius:8px; font-family:'DM Sans',sans-serif; font-size:0.85rem; outline:none; width:220px;"
+          />
+        </div>
+      </div>
+
+      <!-- Scholar link -->
+      <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.2); border-radius:var(--radius); padding:1rem 1.5rem; display:flex; align-items:center; gap:1rem; margin-bottom:2rem; flex-wrap:wrap;">
+        <span style="font-size:1.2rem;">&#127891;</span>
+        <span style="font-size:0.88rem; color:var(--text-muted);">View the full publication record on</span>
+        <a href="https://scholar.google.com" target="_blank" class="btn btn--primary btn--sm">Google Scholar</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="btn btn--outline btn--sm">PubMed</a>
+      </div>
+
+      <div class="pub-list" id="pubList">
+
+        <!-- 2025 -->
+        <div class="pub-item fade-in" data-year="2025">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-title">Single-nucleus transcriptomic profiling of human heart failure reveals a disease-associated fibroblast subpopulation with activated TGF-beta signaling</div>
+            <div class="pub-authors">Hewitt J*, Smith A, Garcia M, Chen R, Patel S, Nguyen T, Martinez L</div>
+            <div class="pub-journal">Nature Communications, 16(1): 3842</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2025">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-title">LungGraph: a graph-based computational framework for spatial cell-cell communication in lung disease</div>
+            <div class="pub-authors">Garcia M*, Hewitt J*, Thompson K, Lee W</div>
+            <div class="pub-journal">Bioinformatics, 41(3): btaf042</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="pub-item fade-in" data-year="2024">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-title">Spatial transcriptomics reveals vascular lesion-associated gene programs in pulmonary arterial hypertension</div>
+            <div class="pub-authors">Smith A, Hewitt J, Patel S, Brown C, Kim J</div>
+            <div class="pub-journal">Circulation, 149(18): 1412-1428</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2024">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-title">Multi-omics integration identifies regulatory networks governing cardiomyocyte adaptation to pressure overload</div>
+            <div class="pub-authors">Chen R, Martinez L, Hewitt J, Wilson E, Davis F</div>
+            <div class="pub-journal">Journal of Clinical Investigation, 134(9): e174023</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in fade-in-delay-2" data-year="2024">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <div class="pub-title">CardioAtlas: a single-cell reference atlas of the healthy and failing human heart</div>
+            <div class="pub-authors">Hewitt J*, Nguyen T*, Smith A, Garcia M, Patel S</div>
+            <div class="pub-journal">Cell Genomics, 4(7): 100574</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="pub-item fade-in" data-year="2023">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <div class="pub-title">Chromatin accessibility remodeling in cardiac macrophages defines disease-associated epigenetic states in heart failure</div>
+            <div class="pub-authors">Martinez L, Hewitt J, Brown C, Kim J, Andersen P</div>
+            <div class="pub-journal">Circulation Research, 132(12): 1567-1584</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2023">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <div class="pub-title">HewittPipe: a reproducible end-to-end pipeline for single-cell RNA-seq analysis in cardiovascular and pulmonary tissues</div>
+            <div class="pub-authors">Hewitt J, Thompson K, Garcia M</div>
+            <div class="pub-journal">GigaScience, 12: giad091</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="pub-item fade-in" data-year="2022">
+          <div class="pub-year">2022</div>
+          <div class="pub-content">
+            <div class="pub-title">GWAS-informed eQTL integration identifies causal variants and target genes in dilated cardiomyopathy</div>
+            <div class="pub-authors">Wilson E, Hewitt J, Davis F, Smith A, Chen R</div>
+            <div class="pub-journal">Nature Genetics, 54(6): 803-815</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2022">
+          <div class="pub-year">2022</div>
+          <div class="pub-content">
+            <div class="pub-title">Comparative single-cell transcriptomics of pulmonary fibrosis identifies conserved and species-specific disease programs</div>
+            <div class="pub-authors">Patel S, Brown C, Hewitt J, Nguyen T, Lee W</div>
+            <div class="pub-journal">JCI Insight, 7(14): e157892</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="pub-item fade-in" data-year="2021">
+          <div class="pub-year">2021</div>
+          <div class="pub-content">
+            <div class="pub-title">Cell-type-specific transcriptional regulation of the RAAS pathway in hypertensive cardiac hypertrophy</div>
+            <div class="pub-authors">Hewitt J, Kim J, Martinez L, Andersen P</div>
+            <div class="pub-journal">Cardiovascular Research, 117(8): 1897-1911</div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn btn--primary btn--sm">PDF</a>
+            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="noResults" style="display:none; padding:3rem; text-align:center; color:var(--text-muted);">
+        No publications found matching your search.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="margin-bottom:1rem; display:inline-flex;">
+            <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg></div>
+            <div class="logo-text"><span class="logo-name">Hewitt Lab</span><span class="logo-sub">UNMC</span></div>
+          </a>
+          <p class="footer-tagline">Integrative computational biology for cardiac and pulmonary disease research at UNMC.</p>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><ul>
+          <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li>
+          <li><a href="tools.html">Tools &amp; Technologies</a></li><li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html">Lab Members</a></li><li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>External Profiles</h4><ul>
+          <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a></li>
+          <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4>
+          <address>University of Nebraska<br/>Medical Center<br/>Omaha, NE 68198<br/><br/><a href="mailto:hewittlab@unmc.edu">hewittlab@unmc.edu</a></address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Hewitt Lab &ndash; University of Nebraska Medical Center.</span>
+        <div style="display:flex; gap:1.5rem;"><a href="#">Privacy Policy</a><a href="https://www.unmc.edu" target="_blank">UNMC.edu</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav  = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => { mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex'; });
+
+    // Filter by year
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const pubItems   = document.querySelectorAll('.pub-item');
+    const searchInput = document.getElementById('pubSearch');
+
+    function applyFilters() {
+      const activeYear  = document.querySelector('.filter-btn.active').dataset.year;
+      const searchQuery = searchInput.value.toLowerCase();
+      let visible = 0;
+
+      pubItems.forEach(item => {
+        const yearMatch   = activeYear === 'all' || item.dataset.year === activeYear;
+        const textMatch   = !searchQuery || item.textContent.toLowerCase().includes(searchQuery);
+        const show        = yearMatch && textMatch;
+        item.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+
+    // Scroll fade-in
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
