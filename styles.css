@@ -198,7 +198,7 @@ ul { list-style: none; }
 
 /* Transparent on top of hero */
 .site-header.hero-page {
-  background: transparent;
+  background: var(--navy);
 }
 
 .site-header.scrolled,
