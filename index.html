@@ -103,6 +103,7 @@
       <div class="research-strip">
         <div class="research-card fade-in">
           <!-- <div class="research-icon">&#10084;&#65039;</div> -->
+          <div class="research-icon"><img src="./public/icon-dna.jpg.jpg" alt="Transcriptomics" /></div>
           <h3>Transcriptomic Profiling</h3>
           <p>We use single-cell RNA sequencing and chromatin accessibility profiling to dissect
           the transcriptional landscape of erythroid progenitors in acute anemia, identifying
@@ -112,6 +113,7 @@
 
         <div class="research-card fade-in fade-in-delay-1">
           <!-- <div class="research-icon">&#129752;</div> -->
+          <div class="research-icon"><img src="./public/icon-blooddrop.jpg.jpg" alt="Functional Assays" /></div>
           <h3>Stress Erythropoiesis Mechanisms</h3>
           <p>We investigate how environmental exposures, genetic variation, and cell
           signaling perturbations converge to drive hematological malignancies including
@@ -121,6 +123,7 @@
 
         <div class="research-card fade-in fade-in-delay-2">
           <!--<div class="research-icon">&#129504;</div>-->
+          <div class="research-icon"><img src="./public/icon-computational.png.png" alt="Computational" /></div>
           <h3>Bioinformatics Frameworks</h3>
           <p>We develop and apply machine learning models, multi-omics integration pipelines,
           and bioinformatics workflows to extract actionable biological insights from large,
@@ -135,15 +138,17 @@
   <!-- ============================================================
        ABOUT SPLIT
   ============================================================ -->
-  <section class="section section--tint">
+  <!--  
+  <section class="section section--tint">  
     <div class="container">
       <div class="about-split">
         <div class="about-img">
-          <!-- PLACEHOLDER: Replace with public/group-photo.jpg -->
-          <img
+        -->  
+          <!-- <img 
             src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
             alt="Hewitt Lab team at UNMC"
-          />
+          /> -->
+          <!--  
           <div class="about-img-badge">
             <div class="badge-icon">&#127979;</div>
             <div>
@@ -195,7 +200,7 @@
       </div>
     </div>
   </section>
-
+-->
   <!-- ============================================================
        NEWS / HIGHLIGHTS
   ============================================================ -->
@@ -210,61 +215,64 @@
       </div>
 
       <div class="grid-3">
+        <div class="card fade-in fade-in-delay-1">
+          <!-- PLACEHOLDER: Replace with public/news-2.jpg -->
+          <img
+            src="public/sam_gomez.jpeg"
+            alt="Computational biology"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-label">Graduation</div>
+            <h3 class="card-title">Samantha Gomez has successfully defended her master's thesis!</h3>
+            <p class="card-text">Master's student from Hewitt Lab has successfully defended
+              her thesis on understanding the role of SAMD1 and its cofactors in regulating erythropoiesis.</p>
+
+          </div>
+        </div>
+                <div class="card fade-in fade-in-delay-2">
+          <!-- PLACEHOLDER: Replace with public/news-3.jpg -->
+          <img
+            src="public/Roy_ Pooja.JPG"
+            alt="Medical research"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-label">Graduation</div>
+            <h3 class="card-title">Dr. Pooja Roy has successfully defended her PhD thesis!</h3>
+            <p class="card-text">Dr. Roy's research was focused on understanding the role of Samd14-PI3P axis
+            in regulating erythropoiesis in acute anemia. She is also the recipient of the prestiguous Thomas H. Rosenquist Graduate Student Award
+            for demonstrating outstanding skill and leadership in research, as well as teaching and mentoring.</p>
+
+          </div>
+          <!-- <div class="card-footer"> 
+            <span class="tag">Funding</span>
+            <a href="contact.html" class="research-link" style="font-size:0.82rem">Learn more &#8594;</a>
+          </div> -->
+        </div>
+        
+        
         <div class="card fade-in">
           <!-- PLACEHOLDER: Replace with public/news-1.jpg -->
           <img
-            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80"
+            src="public/iscience-frontpage.png"
             alt="Single cell research"
             class="card-img"
           />
           <div class="card-body">
             <div class="card-label">Publication</div>
-            <h3 class="card-title">New Paper on Cardiac Fibroblast Activation in Heart Failure</h3>
-            <p class="card-text">Our latest study identifies a novel transcriptional signature
-            in activated cardiac fibroblasts using snRNA-seq from human heart failure samples.</p>
+            <h3 class="card-title">New Paper on Samd14's Role in Regulating Autophagy in Anemia</h3>
+            <p class="card-text">Our latest study identifies that Samd14 acts as a brake on excessive autophagy in anemia stress.
+            These findings reveal a stress-dependent mechanism by which Samd14 sustains progenitor survival and ensures the 
+            production of healthy red blood cells during anemia.
+            </p>
           </div>
           <div class="card-footer">
-            <span class="tag">Nature Communications</span>
+            <span class="tag">iScience</span>
             <a href="publications.html" class="research-link" style="font-size:0.82rem">Read &#8594;</a>
           </div>
         </div>
 
-        <div class="card fade-in fade-in-delay-1">
-          <!-- PLACEHOLDER: Replace with public/news-2.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
-            alt="Computational biology"
-            class="card-img"
-          />
-          <div class="card-body">
-            <div class="card-label">Software Release</div>
-            <h3 class="card-title">HewittPipe v2.0: End-to-End scRNA-seq Analysis Workflow</h3>
-            <p class="card-text">We have released an updated version of our flagship pipeline
-            with improved doublet detection, ambient RNA correction, and trajectory inference.</p>
-          </div>
-          <div class="card-footer">
-            <span class="tag">Open Source</span>
-            <a href="tools.html" class="research-link" style="font-size:0.82rem">Explore &#8594;</a>
-          </div>
-        </div>
-
-        <div class="card fade-in fade-in-delay-2">
-          <!-- PLACEHOLDER: Replace with public/news-3.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80"
-            alt="Medical research"
-            class="card-img"
-          />
-          <div class="card-body">
-            <div class="card-label">Award</div>
-            <h3 class="card-title">NIH R01 Grant Awarded for Pulmonary Hypertension Study</h3>
-            <p class="card-text">The lab has received a new NIH R01 grant to investigate
-            vascular remodeling in pulmonary arterial hypertension using spatial transcriptomics.</p>
-          </div>
-          <div class="card-footer">
-            <span class="tag">Funding</span>
-            <a href="contact.html" class="research-link" style="font-size:0.82rem">Learn more &#8594;</a>
-          </div>
         </div>
       </div>
     </div>
@@ -279,7 +287,7 @@
         <div class="cta-text">
           <h2>Interested in Joining Our Team?</h2>
           <p>We welcome motivated postdoctoral researchers, graduate students, and
-          undergraduates with passion for computational biology and genomics.</p>
+          undergraduates with passion for molecular biology and genomics.</p>
         </div>
         <div class="cta-actions">
           <a href="contact.html" class="btn btn--primary">Get in Touch</a>
@@ -320,7 +328,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-
+        <!--  
         <div class="footer-col">
           <h4>Research</h4>
           <ul>
@@ -329,7 +337,7 @@
             <li><a href="research.html#methods">Computational Methods</a></li>
             <li><a href="research.html#translational">Translational Research</a></li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="footer-col">
           <h4>Contact</h4>
