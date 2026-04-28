@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools &amp; Technologies | Hewitt Lab | UNMC</title>
+  <meta name="description" content="Wet lab tools, assays, mouse models, and experimental technologies used in the Hewitt Lab to study erythropoiesis at UNMC." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header solid" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Hewitt Lab</span>
+          <span class="logo-sub">UNMC &nbsp;|&nbsp; Cardiac &amp; Pulmonary</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="tools.html" class="nav-link active">Tools &amp; Technologies</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="team.html" class="nav-link">Lab Members</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary btn--sm header-cta">Join the Lab</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
+    <a href="index.html"        class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
+    <a href="research.html"     class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Research</a>
+    <a href="tools.html"        class="nav-link active" style="font-size:1.1rem;color:white">Tools &amp; Technologies</a>
+    <a href="publications.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Publications</a>
+    <a href="team.html"         class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
+    <a href="news.html"         class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">News</a>
+    <a href="contact.html"      class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Contact</a>
+    <a href="contact.html"      class="btn btn--primary" style="margin-top:1.5rem">Join the Lab</a>
+  </div>
+
+  <!-- ============================================================
+       PAGE HERO
+  ============================================================ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Experimental Approaches</span>
+      <h1 class="page-hero-title">Tools &amp; Technologies</h1>
+      <p class="page-hero-desc">
+        We employ a broad suite of wet lab assays, genetic models, and functional
+        validation strategies to dissect the molecular regulation of erythropoiesis
+        from the enhancer to the organism level.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OVERVIEW TILES
+  ============================================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="text-center" style="max-width:680px; margin:0 auto 3.5rem;">
+        <span class="section-label">Our Approach</span>
+        <h2 class="section-title">From Genome to Function</h2>
+        <p class="section-subtitle">
+          Understanding how transcriptional regulators and cis-regulatory elements
+          control red blood cell development requires integrating genomic discovery
+          with rigorous experimental validation. Our toolkit spans gene editing,
+          primary cell culture, genomics, imaging, and in vivo mouse genetics.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem;">
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; margin-bottom:0.4rem;">&#129995;</div>
+          <div style="font-size:0.85rem; font-weight:600; color:var(--navy);">Gene Editing</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:4px;">RNP nucleofection in primary HSPCs</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; margin-bottom:0.4rem;">&#128000;</div>
+          <div style="font-size:0.85rem; font-weight:600; color:var(--navy);">Mouse Models</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:4px;">Samd14 CKO and Enh KO lines</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; margin-bottom:0.4rem;">&#128202;</div>
+          <div style="font-size:0.85rem; font-weight:600; color:var(--navy);">Genomics</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:4px;">RNA-seq, ATAC-seq, scRNA-seq</div>
+        </div>
+        <div style="background:var(--teal-faint); border:1px solid rgba(60,172,207,0.15); border-radius:var(--radius); padding:1.5rem; text-align:center;">
+          <div style="font-size:2rem; margin-bottom:0.4rem;">&#128300;</div>
+          <div style="font-size:0.85rem; font-weight:600; color:var(--navy);">Imaging</div>
+          <div style="font-size:0.78rem; color:var(--text-muted); margin-top:4px;">Immunofluorescence and confocal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1 — FUNCTIONAL VALIDATION ASSAYS
+  ============================================================ -->
+  <section class="section section--tint">
+    <div class="container">
+      <span class="section-label">Functional Validation</span>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Cell-Based Assays</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">
+        We validate regulatory hypotheses using primary hematopoietic progenitor
+        cells and differentiation systems that faithfully model human and murine erythropoiesis.
+      </p>
+
+      <div class="tools-grid">
+
+        <div class="tool-card fade-in">
+          <div class="tool-icon">&#129521;</div>
+          <h3>Flow Cytometry</h3>
+          <div class="version">Immunophenotyping &amp; Sorting</div>
+          <p>
+            We use multiparameter flow cytometry to resolve erythroid differentiation
+            stages using surface markers including CD71, Ter119, CD44, and CD117.
+            This approach allows precise quantification of progenitor populations,
+            assessment of differentiation kinetics, and isolation of defined cell
+            fractions by FACS for downstream genomic or biochemical analysis.
+          </p>
+          <div class="tool-links">
+            <span class="tag">BD LSRFortessa</span>
+            <span class="tag">FACSAria</span>
+          </div>
+        </div>
+
+        <div class="tool-card fade-in fade-in-delay-1">
+          <div class="tool-icon">&#129514;</div>
+          <h3>Colony Forming Unit Assays</h3>
+          <div class="version">CFU-E / BFU-E Quantification</div>
+          <p>
+            Colony forming unit assays are a cornerstone of our erythroid functional
+            validation pipeline. We culture murine bone marrow or fetal liver
+            progenitors, as well as human CD34+ HSPCs, in semi-solid methylcellulose
+            media to enumerate erythroid progenitor activity under stress and
+            homeostatic conditions, including following genetic perturbation.
+          </p>
+          <div class="tool-links">
+            <span class="tag">MethoCult</span>
+            <span class="tag">CFU-E</span>
+            <span class="tag">BFU-E</span>
+          </div>
+        </div>
+
+        <div class="tool-card fade-in fade-in-delay-2">
+          <div class="tool-icon">&#129688;</div>
+          <h3>Lentiviral Transduction</h3>
+          <div class="version">Stable Gene Delivery in HSPCs</div>
+          <p>
+            We generate lentiviral constructs to stably overexpress or knockdown
+            transcription factors and regulatory genes in primary hematopoietic
+            stem and progenitor cells. This enables gain-of-function and
+            loss-of-function studies in human CD34+ cells and murine LSK progenitors
+            across multi-day erythroid differentiation protocols.
+          </p>
+          <div class="tool-links">
+            <span class="tag">VSV-G pseudotyped</span>
+            <span class="tag">CD34+ HSPCs</span>
+          </div>
+        </div>
+
+        <div class="tool-card fade-in">
+          <div class="tool-icon">&#9889;</div>
+          <h3>RNP Nucleofection</h3>
+          <div class="version">CRISPR-Cas9 in Primary Cells</div>
+          <p>
+            We deliver pre-assembled ribonucleoprotein (RNP) complexes of Cas9
+            protein and guide RNA directly into primary hematopoietic progenitors
+            via nucleofection. This approach achieves high on-target editing efficiency
+            with minimal toxicity, enabling precise knockout of transcription factor
+            binding sites, enhancer sequences, and coding exons in human and
+            murine erythroid progenitors.
+          </p>
+          <div class="tool-links">
+            <span class="tag">Lonza 4D Nucleofector</span>
+            <span class="tag">Cas9 RNP</span>
+          </div>
+        </div>
+
+        <div class="tool-card fade-in fade-in-delay-1">
+          <div class="tool-icon">&#127981;</div>
+          <h3>PIP Strips</h3>
+          <div class="version">Phosphoinositide Binding Assays</div>
+          <p>
+            We use PIP Strip membrane assays to evaluate the phosphoinositide-binding
+            specificity of proteins of interest in the erythroid regulatory network.
+            Purified recombinant protein or cell lysate fractions are incubated with
+            membranes spotted with defined phospholipids, enabling identification
+            of lipid-binding domains relevant to membrane-associated signaling
+            in erythroid development.
+          </p>
+          <div class="tool-links">
+            <span class="tag">Echelon Biosciences</span>
+            <span class="tag">Lipid Binding</span>
+          </div>
+        </div>
+
+        <div class="tool-card fade-in fade-in-delay-2">
+          <div class="tool-icon">&#128300;</div>
+          <h3>Immunofluorescence Microscopy</h3>
+          <div class="version">Protein Localization Studies</div>
+          <p>
+            We apply immunofluorescence (IF) imaging to visualize the subcellular
+            localization of transcription factors, chromatin regulators, and
+            structural proteins across erythroid differentiation stages. Confocal
+            imaging of bone marrow cytospin preparations and cultured erythroid
+            cells allows us to correlate protein distribution with functional state
+            and genetic background.
+          </p>
+          <div class="tool-links">
+            <span class="tag">Confocal</span>
+            <span class="tag">Cytospins</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — GENOMICS
+  ============================================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <span class="section-label">Genomics</span>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Sequencing-Based Approaches</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">
+        We generate and analyze high-dimensional genomic datasets to map the
+        transcriptional and epigenomic landscape of erythropoiesis at bulk
+        and single-cell resolution.
+      </p>
+
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
+
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:2rem; transition:var(--transition);" class="fade-in"
+             onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+            <div style="width:44px; height:44px; background:var(--teal-faint); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; border:1px solid rgba(60,172,207,0.15);">&#128229;</div>
+            <div>
+              <div style="font-size:1rem; font-weight:600; color:var(--navy);">Bulk RNA-seq</div>
+              <div style="font-size:0.72rem; color:var(--teal-dark); font-weight:500;">Transcriptome Profiling</div>
+            </div>
+          </div>
+          <p style="font-size:0.87rem; color:var(--text-muted); line-height:1.7;">
+            We perform poly-A selected and ribo-depleted RNA sequencing on sorted
+            erythroid populations to quantify gene expression changes following
+            genetic perturbation, stress erythropoiesis induction, or cytokine
+            stimulation. Libraries are prepared from as few as 50,000 sorted cells
+            to enable profiling of rare progenitor fractions.
+          </p>
+          <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="tag">DESeq2</span>
+            <span class="tag">STAR</span>
+            <span class="tag">featureCounts</span>
+          </div>
+        </div>
+
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:2rem; transition:var(--transition);" class="fade-in fade-in-delay-1"
+             onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+            <div style="width:44px; height:44px; background:var(--teal-faint); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; border:1px solid rgba(60,172,207,0.15);">&#128214;</div>
+            <div>
+              <div style="font-size:1rem; font-weight:600; color:var(--navy);">ATAC-seq</div>
+              <div style="font-size:0.72rem; color:var(--teal-dark); font-weight:500;">Chromatin Accessibility</div>
+            </div>
+          </div>
+          <p style="font-size:0.87rem; color:var(--text-muted); line-height:1.7;">
+            ATAC-seq is used to map open chromatin regions, nucleosome positioning,
+            and transcription factor footprints across erythroid differentiation.
+            We apply ATAC-seq to compare accessibility landscapes between wild-type
+            and enhancer knockout progenitors, identifying regulatory elements
+            functionally dependent on key erythroid regulators such as GATA-1 and TAL1.
+          </p>
+          <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="tag">Bowtie2</span>
+            <span class="tag">MACS2</span>
+            <span class="tag">DiffBind</span>
+          </div>
+        </div>
+
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:2rem; transition:var(--transition);" class="fade-in fade-in-delay-2"
+             onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+            <div style="width:44px; height:44px; background:var(--teal-faint); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; border:1px solid rgba(60,172,207,0.15);">&#129522;</div>
+            <div>
+              <div style="font-size:1rem; font-weight:600; color:var(--navy);">scRNA-seq by Seq-Well</div>
+              <div style="font-size:0.72rem; color:var(--teal-dark); font-weight:500;">Single-Cell Transcriptomics</div>
+            </div>
+          </div>
+          <p style="font-size:0.87rem; color:var(--text-muted); line-height:1.7;">
+            We use the Seq-Well platform for massively parallel single-cell RNA
+            sequencing of primary hematopoietic cells. This portable, low-input
+            method is particularly suited to rare progenitor populations and allows
+            us to map transcriptional heterogeneity, identify novel cell states,
+            and trace differentiation trajectories across erythropoiesis at
+            single-cell resolution in both homeostatic and stress conditions.
+          </p>
+          <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="tag">Seq-Well S3</span>
+            <span class="tag">Seurat</span>
+            <span class="tag">Trajectory</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — MOUSE MODELS
+  ============================================================ -->
+  <section class="section section--tint">
+    <div class="container">
+      <span class="section-label">In Vivo Models</span>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Mouse Genetic Models</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">
+        We leverage precision-engineered mouse models to study the in vivo consequences
+        of disrupting key erythroid regulators and cis-regulatory elements, including
+        under conditions of anemia-induced stress erythropoiesis.
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:2.5rem;" class="fade-in">
+          <div style="display:flex; align-items:flex-start; gap:1.25rem; margin-bottom:1.5rem;">
+            <div style="width:52px; height:52px; background:var(--teal-faint); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.6rem; flex-shrink:0; border:1px solid rgba(60,172,207,0.15);">&#128000;</div>
+            <div>
+              <h3 style="font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.2rem;">Samd14 Conditional Knockout</h3>
+              <div style="font-size:0.78rem; color:var(--teal-dark); font-weight:500;">Samd14 CKO &bull; Hematopoietic-specific deletion</div>
+            </div>
+          </div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.75; margin-bottom:1.25rem;">
+            The Samd14 conditional knockout model uses Cre-lox technology to achieve
+            hematopoietic-specific deletion of Samd14, a membrane-associated protein
+            we have identified as a regulator of erythroid progenitor survival and
+            stress erythropoiesis. Samd14 CKO mice develop normally under homeostatic
+            conditions but exhibit a significantly impaired recovery response following
+            phlebotomy-induced anemia, revealing a non-redundant role for Samd14 in
+            erythroid regeneration.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            <span class="tag">Vav1-Cre</span>
+            <span class="tag">Stress Erythropoiesis</span>
+            <span class="tag">Phlebotomy Model</span>
+            <span class="tag">Bone Marrow Analysis</span>
+          </div>
+        </div>
+
+        <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:2.5rem;" class="fade-in fade-in-delay-1">
+          <div style="display:flex; align-items:flex-start; gap:1.25rem; margin-bottom:1.5rem;">
+            <div style="width:52px; height:52px; background:var(--teal-faint); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.6rem; flex-shrink:0; border:1px solid rgba(60,172,207,0.15);">&#9999;&#65039;</div>
+            <div>
+              <h3 style="font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.2rem;">Samd14 Enhancer Knockout</h3>
+              <div style="font-size:0.78rem; color:var(--teal-dark); font-weight:500;">Enh KO &bull; Cis-regulatory element deletion</div>
+            </div>
+          </div>
+          <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.75; margin-bottom:1.25rem;">
+            The Samd14 enhancer knockout (Enh KO) model uses CRISPR-Cas9-mediated
+            germline deletion to remove a hematopoietic-specific intronic enhancer
+            element that drives Samd14 expression in erythroid progenitors. Enh KO
+            mice display reduced Samd14 expression selectively in hematopoietic
+            tissues, leading to impaired CFU activity and diminished progenitor
+            survival under anemic stress, establishing this enhancer as a critical
+            in vivo regulatory element.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            <span class="tag">CRISPR Germline</span>
+            <span class="tag">Enhancer Biology</span>
+            <span class="tag">CFU Assays</span>
+            <span class="tag">Anemia Models</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Workflow strip -->
+      <div style="margin-top:2.5rem; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:2rem;">
+        <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:1.5rem;">In Vivo Experimental Workflow</p>
+        <div class="pipeline-steps">
+          <div class="pipeline-step">
+            <div class="step-num">Step 01</div>
+            <h4>Model Generation</h4>
+            <p>Breeding, genotyping, and confirmation of CKO or Enh KO alleles by PCR and sequencing.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">Step 02</div>
+            <h4>Stress Induction</h4>
+            <p>Phlebotomy-induced acute anemia to interrogate stress erythropoiesis response.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">Step 03</div>
+            <h4>Tissue Harvest</h4>
+            <p>Bone marrow, spleen, and peripheral blood collection at defined recovery timepoints.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">Step 04</div>
+            <h4>Flow Cytometry</h4>
+            <p>Immunophenotyping of erythroid progenitor stages and quantification of cellularity.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">Step 05</div>
+            <h4>Functional Assays</h4>
+            <p>CFU colony assays, blood counts, and reticulocyte quantification.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">Step 06</div>
+            <h4>Genomics</h4>
+            <p>RNA-seq and ATAC-seq on sorted populations to map transcriptional changes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — IMAGING
+  ============================================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <span class="section-label">Imaging</span>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Immunofluorescence Studies</h2>
+      <p class="section-subtitle" style="margin-bottom:3rem;">
+        Spatial and morphological context complements genomic data. We use immunofluorescence
+        microscopy to visualize protein localization, co-occupancy, and structural
+        changes across erythroid maturation stages.
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+
+        <div class="fade-in">
+          <!-- PLACEHOLDER: Replace with public/tools-if-image.jpg -->
+          <img
+            src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80"
+            alt="Immunofluorescence microscopy"
+            style="width:100%; height:320px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow);"
+          />
+        </div>
+
+        <div class="fade-in fade-in-delay-1" style="display:flex; flex-direction:column; gap:1.25rem;">
+          <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem;">
+            <div style="font-size:0.9rem; font-weight:600; color:var(--navy); margin-bottom:0.4rem;">Cytospin Preparations</div>
+            <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.65;">
+              Bone marrow cells and cultured erythroid progenitors are prepared as cytospin
+              slides to preserve cell morphology for antibody staining and confocal imaging
+              across differentiation stages.
+            </p>
+          </div>
+          <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem;">
+            <div style="font-size:0.9rem; font-weight:600; color:var(--navy); margin-bottom:0.4rem;">Transcription Factor Localization</div>
+            <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.65;">
+              We use validated antibodies against GATA-1, TAL1, KLF1, and Samd14 to map
+              nuclear versus cytoplasmic distribution and assess co-localization between
+              interacting regulatory proteins in erythroid progenitors.
+            </p>
+          </div>
+          <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem;">
+            <div style="font-size:0.9rem; font-weight:600; color:var(--navy); margin-bottom:0.4rem;">Enucleation and Morphology</div>
+            <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.65;">
+              Terminal erythroid maturation is assessed by imaging nuclear condensation,
+              enucleation efficiency, and cytoskeletal remodeling using DAPI, Ter119,
+              and F-actin staining across ex vivo differentiation cultures.
+            </p>
+          </div>
+          <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:1.5rem;">
+            <div style="font-size:0.9rem; font-weight:600; color:var(--navy); margin-bottom:0.4rem;">Proximity Ligation Assay (PLA)</div>
+            <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.65;">
+              To detect protein-protein interactions in situ, we perform proximity ligation
+              assays in primary erythroid cells, enabling visualization of endogenous
+              complex formation at single-molecule sensitivity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — FULL TABLE
+  ============================================================ -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="text-center" style="max-width:560px; margin:0 auto 3rem;">
+        <span class="section-label">At a Glance</span>
+        <h2 class="section-title">Full Technology Overview</h2>
+        <p class="section-subtitle">A summary of the experimental platforms and assays routinely used in the lab.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+        <div>
+          <p class="group-section-title">Functional and Cell-Based Assays</p>
+          <div style="display:flex; flex-direction:column; gap:0.6rem;">
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Flow Cytometry and FACS</span>
+              <span class="tag">Immunophenotyping</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">CFU Colony Assays</span>
+              <span class="tag">CFU-E / BFU-E</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">RNP Nucleofection</span>
+              <span class="tag">CRISPR-Cas9</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Lentiviral Transduction</span>
+              <span class="tag">Stable Delivery</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">PIP Strips</span>
+              <span class="tag">Phospholipid Binding</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Ex Vivo Erythroid Differentiation</span>
+              <span class="tag">Primary Culture</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="group-section-title">Genomics, Imaging, and In Vivo</p>
+          <div style="display:flex; flex-direction:column; gap:0.6rem;">
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Bulk RNA-seq</span>
+              <span class="tag">Transcriptomics</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">ATAC-seq</span>
+              <span class="tag">Chromatin Accessibility</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">scRNA-seq by Seq-Well</span>
+              <span class="tag">Single-Cell</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Immunofluorescence Microscopy</span>
+              <span class="tag">Confocal Imaging</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Samd14 CKO Mouse Model</span>
+              <span class="tag">In Vivo Genetics</span>
+            </div>
+            <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:0.9rem 1.25rem; display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.88rem; font-weight:500; color:var(--navy);">Samd14 Enh KO Mouse Model</span>
+              <span class="tag">Enhancer Biology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA
+  ============================================================ -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-text">
+          <h2>Interested in Our Methods?</h2>
+          <p>We are happy to discuss experimental approaches, share protocols,
+          or explore collaborative opportunities with groups working in erythropoiesis
+          and hematopoietic biology.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+          <a href="publications.html" class="btn btn--outline-white">See Publications</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="margin-bottom:1rem; display:inline-flex;">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">Hewitt Lab</span>
+              <span class="logo-sub">UNMC</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Integrative experimental biology for erythropoiesis research at UNMC.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="tools.html">Tools &amp; Technologies</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="team.html">Lab Members</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Technologies</h4>
+          <ul>
+            <li><a href="#">Flow Cytometry</a></li>
+            <li><a href="#">RNP Nucleofection</a></li>
+            <li><a href="#">Lentiviral Transduction</a></li>
+            <li><a href="#">RNA-seq / ATAC-seq</a></li>
+            <li><a href="#">scRNA-seq by Seq-Well</a></li>
+            <li><a href="#">Mouse Models</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            University of Nebraska<br />
+            Medical Center<br />
+            Omaha, NE 68198<br /><br />
+            <a href="mailto:hewittlab@unmc.edu">hewittlab@unmc.edu</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Hewitt Lab &ndash; University of Nebraska Medical Center.</span>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="https://www.unmc.edu" target="_blank" rel="noopener">UNMC.edu</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav  = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+    });
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

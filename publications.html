@@ -13,9 +13,7 @@
   <header class="site-header solid" id="siteHeader">
     <div class="header-inner">
       <a href="index.html" class="header-logo">
-        <div class="logo-mark">
-          <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
-        </div>
+
         <div class="logo-text">
           <span class="logo-name">Hewitt Lab</span>
           <span class="logo-sub">UNMC &nbsp;</span>
@@ -24,7 +22,7 @@
       <nav class="header-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="research.html" class="nav-link">Research</a>
-        <a href="tools.html" class="nav-link">Tools &amp; Technologies</a>
+        <!-- <a href="tools.html" class="nav-link">Tools &amp; Technologies</a> -->
         <a href="publications.html" class="nav-link active">Publications</a>
         <a href="team.html" class="nav-link">Lab Members</a>
         <a href="news.html" class="nav-link">News</a>
@@ -38,7 +36,7 @@
   <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
     <a href="index.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
     <a href="research.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Research</a>
-    <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a>
+    <!-- <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a> -->
     <a href="publications.html" class="nav-link active" style="font-size:1.1rem;color:white">Publications</a>
     <a href="team.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
     <a href="news.html" class="nav-link">News</a>
@@ -66,11 +64,11 @@
       <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
         <div class="pub-filter" id="filterBar">
           <button class="filter-btn active" data-year="all">All Years</button>
+          <button class="filter-btn" data-year="2026">2026</button>
           <button class="filter-btn" data-year="2025">2025</button>
-          <button class="filter-btn" data-year="2024">2024</button>
           <button class="filter-btn" data-year="2023">2023</button>
           <button class="filter-btn" data-year="2022">2022</button>
-          <button class="filter-btn" data-year="2021">2021</button>
+          <button class="filter-btn" data-year="2020">2020</button>
         </div>
         <div style="display:flex; align-items:center; gap:0.5rem;">
           <input
@@ -93,69 +91,82 @@
       <div class="pub-list" id="pubList">
 
         <!-- 2025 -->
-        <div class="pub-item fade-in" data-year="2025">
-          <div class="pub-year">2025</div>
+        <div class="pub-item fade-in" data-year="2026">
+          <div class="pub-year">2026</div>
           <div class="pub-content">
-            <div class="pub-title">Single-nucleus transcriptomic profiling of human heart failure reveals a disease-associated fibroblast subpopulation with activated TGF-beta signaling</div>
-            <div class="pub-authors">Hewitt J*, Smith A, Garcia M, Chen R, Patel S, Nguyen T, Martinez L</div>
-            <div class="pub-journal">Nature Communications, 16(1): 3842</div>
+            <div class="pub-title">A stress-induced PI3P complex controls autophagy in erythroid precursors</div>
+            <div class="pub-authors">Pooja Roy*, Blake A Rose, Suhita Ray, Venkatasai R. Dogiparthi, Meg A. Schaefer, 
+              Cheryl L. Stucky, Suyong Choi, Nicholas T. Woods, Kyle J. Hewitt</div>
+            <div class="pub-journal">iScience</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://www.cell.com/action/showPdf?pii=S2589-0042%2826%2900557-2" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://www.cell.com/iscience/fulltext/S2589-0042(26)00557-2" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
-
         <div class="pub-item fade-in fade-in-delay-1" data-year="2025">
           <div class="pub-year">2025</div>
           <div class="pub-content">
-            <div class="pub-title">LungGraph: a graph-based computational framework for spatial cell-cell communication in lung disease</div>
-            <div class="pub-authors">Garcia M*, Hewitt J*, Thompson K, Lee W</div>
-            <div class="pub-journal">Bioinformatics, 41(3): btaf042</div>
+            <div class="pub-title">Signaling mechanisms and cis -regulatory control of Samd14 in erythroid regeneration</div>
+            <div class="pub-authors">Kyle J Hewitt*, Pooja Roy, Meg A Schaefer</div>
+            <div class="pub-journal">Curr Opin Hematol.</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40293138/" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40293138/" class="btn btn--outline btn--sm">DOI</a>
+          </div>
+        </div>
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2025">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-title">Regeneration alters open chromatin and cis-regulatory landscape of erythroid precursors</div>
+            <div class="pub-authors">Yichao Zhou*, Venkatasai Rahul Dogiparthi, Hannah L Harris, Suhita Ray, Avik Choudhuri, 
+              Song Yang, Yi Zhou, Leonard I Zon, M Jordan Rowley, Kyle J Hewitt</div>
+            <div class="pub-journal">Genome Research</div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12212076/" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://doi.org/10.1101/gr.279949.124" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
         <!-- 2024 -->
-        <div class="pub-item fade-in" data-year="2024">
-          <div class="pub-year">2024</div>
+        <div class="pub-item fade-in" data-year="2025">
+          <div class="pub-year">2025</div>
           <div class="pub-content">
-            <div class="pub-title">Spatial transcriptomics reveals vascular lesion-associated gene programs in pulmonary arterial hypertension</div>
-            <div class="pub-authors">Smith A, Hewitt J, Patel S, Brown C, Kim J</div>
-            <div class="pub-journal">Circulation, 149(18): 1412-1428</div>
+            <div class="pub-title">The SAMD1 transcription factor coordinates hematopoietic lineage differentiation and H3K4 methylation status</div>
+            <div class="pub-authors">Meg A. Schaefer*, Samantha L. Gomez, Venkatasai Rahul Dogiparthi, Yichao Zhou, Pooja Roy, Suhita Ray, Linda Chee, Sandipan Brahma, Robert Liefke, Kyle J. Hewitt</div>
+            <div class="pub-journal">Blood Advances</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://ashpublications.org/bloodadvances/article/9/15/3988/537380/The-SAMD1-transcription-factor-coordinates" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://ashpublications.org/bloodadvances/article/9/15/3988/537380/The-SAMD1-transcription-factor-coordinates" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
-        <div class="pub-item fade-in fade-in-delay-1" data-year="2024">
-          <div class="pub-year">2024</div>
+        <div class="pub-item fade-in fade-in-delay-1" data-year="2023">
+          <div class="pub-year">2023</div>
           <div class="pub-content">
-            <div class="pub-title">Multi-omics integration identifies regulatory networks governing cardiomyocyte adaptation to pressure overload</div>
-            <div class="pub-authors">Chen R, Martinez L, Hewitt J, Wilson E, Davis F</div>
-            <div class="pub-journal">Journal of Clinical Investigation, 134(9): e174023</div>
+            <div class="pub-title">Core transcription balancing erythropoiesis</div>
+            <div class="pub-authors">Kyle J Hewitt</div>
+            <div class="pub-journal">Blood</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://ashpublications.org/blood/article/142/25/2130/506586/Core-transcription-balancing-erythropoiesis?guestAccessKey=" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://ashpublications.org/blood/article/142/25/2130/506586/Core-transcription-balancing-erythropoiesis?guestAccessKey=" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
-        <div class="pub-item fade-in fade-in-delay-2" data-year="2024">
-          <div class="pub-year">2024</div>
+        <div class="pub-item fade-in fade-in-delay-2" data-year="2023">
+          <div class="pub-year">2023</div>
           <div class="pub-content">
-            <div class="pub-title">CardioAtlas: a single-cell reference atlas of the healthy and failing human heart</div>
-            <div class="pub-authors">Hewitt J*, Nguyen T*, Smith A, Garcia M, Patel S</div>
-            <div class="pub-journal">Cell Genomics, 4(7): 100574</div>
+            <div class="pub-title">Physiological and regenerative functions of sterile-α motif protein-14 in hematopoiesis</div>
+            <div class="pub-authors">Meg A. Schaefer*, Pooja Roy, Srinivas Chava, Ainsley Meyerson, Andrew L. Duncan, Linda Chee, Kyle J. Hewitt</div>
+            <div class="pub-journal">Experimental Hematology</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://www.exphem.org/action/showPdf?pii=S0301-472X%2823%2901704-6" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://www.exphem.org/article/S0301-472X(23)01704-6/fulltext" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
@@ -163,67 +174,40 @@
         <div class="pub-item fade-in" data-year="2023">
           <div class="pub-year">2023</div>
           <div class="pub-content">
-            <div class="pub-title">Chromatin accessibility remodeling in cardiac macrophages defines disease-associated epigenetic states in heart failure</div>
-            <div class="pub-authors">Martinez L, Hewitt J, Brown C, Kim J, Andersen P</div>
-            <div class="pub-journal">Circulation Research, 132(12): 1567-1584</div>
+            <div class="pub-title">Defining a cohort of anemia-activated cis elements reveals a mechanism promoting erythroid precursor function</div>
+            <div class="pub-authors">Yichao Zhou*, Venkatasai Rahul Dogiparthi, Suhita Ray, Meg A. Schaefer, Hannah L. Harris, M. Jordan Rowley, Kyle J. Hewitt</div>
+            <div class="pub-journal">Blood Advances</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
-          </div>
-        </div>
-
-        <div class="pub-item fade-in fade-in-delay-1" data-year="2023">
-          <div class="pub-year">2023</div>
-          <div class="pub-content">
-            <div class="pub-title">HewittPipe: a reproducible end-to-end pipeline for single-cell RNA-seq analysis in cardiovascular and pulmonary tissues</div>
-            <div class="pub-authors">Hewitt J, Thompson K, Garcia M</div>
-            <div class="pub-journal">GigaScience, 12: giad091</div>
-          </div>
-          <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
-          </div>
-        </div>
-
-        <!-- 2022 -->
-        <div class="pub-item fade-in" data-year="2022">
-          <div class="pub-year">2022</div>
-          <div class="pub-content">
-            <div class="pub-title">GWAS-informed eQTL integration identifies causal variants and target genes in dilated cardiomyopathy</div>
-            <div class="pub-authors">Wilson E, Hewitt J, Davis F, Smith A, Chen R</div>
-            <div class="pub-journal">Nature Genetics, 54(6): 803-815</div>
-          </div>
-          <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://watermark02.silverchair.com/blooda_adv-2022-009163-main.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAABJIwggSOBgkqhkiG9w0BBwagggR_MIIEewIBADCCBHQGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMf3gx4icxumIi9IyIAgEQgIIERXR0DX6stXSpQaNiJ7aL2kmIQpkX2BcbyoTmzAk8dP9jIc8hmVswnhMRP6WumZZjm3W-ZUP3YLkddODlCgVdPq8RHgMwFQXmSSQCzwLJEeUxPw1m1wYy_OTNF2A56PEM6L5YzC1u8HmVzInkp39f1wUdh01lm0B9VVblz13j6hJrBmFoVlean8GDR2fYp1y86FoiHl-uP6W_zLKyZ3G30ASNZSEm0aavDcbY_1ShsvtJaPCHM2ejcWQikS1YC7DblWVlQztE0V6B_iHqGBANH2saSOTXH5G59yi8DxRxuNRlBO0cfLcRlkQ9AE3468v9MT4GjoVGKS7QK_3ZmFCHufZgZr9H7rywwh0Tuf1-yNGqchtExDrdBTxBmsUvr_Tl8rgcpS0jQhq3-_VigXK2X8Z7z9HtnGHpCg3rAEw90KjcURsUdtQpXTt7g2QHth2b6nV1YZKOkN3ozxz_v7rzKFr41gr2PoRG0pWB7cL7bWAKbhvqcuncrXtL0bfdG8OhhBY30laxHT91zfDpE7KFgAZFZS6bis8wZXn2N5icIlsBRSLWazAE6vlSDY2yt3Lv4L011qw0RIQpLE5sHsMzSj8xWlceWg_0POuyL_eTyF4J6BaYU0LfBKRaMCn9FuKfu08Nk5-oJ2CUD2TqfI0KfsXn0ysUVYbb1oJJTwAqkQm2wT2L8D9CqWVS0rFg3Xudh-Yu-0FmKmWqeR_nT_Ww5JzOahmzv7Y1nT5KnfUw4XNqfyzM2XvT6x_HR3NGhcdX9TL_8T3IDPE0ZWU6QSb9UXHsmoOJRaOjVX9v9j8y4EjlI6FyLrglsg9I8aGIIFbW-9yzzkfVqZPyau2pi5zEl-cMaL2qKDTNYn6QU8JyLPLem0PHZsnFVCvwbLU48o5fsDtzaUfhb-D6CyVhU4L9laLyE8-lv_mHurTICTIft81gDhDMm46stbYo5E7ut3-Z0v1hScaNLHDT9rfKg3gbrNp5yf7vpPB-ou5RA6Q-aC2DWZIbai9lKcJ_Qpb3z0-kLQVV-q31V9yHhp_1LUhJfE-uCxgnNw0J-D2K61hgVU-OxixF9TXy2cn-ugx_sna2K10x_KF_TuBeud8jR0s2g8QrCCCPuS0GWJd7rjP8WxnwiHN2CD3zYoU46zLdEcOexai_5efMuS7JuBdjUyxhW4Bpnqba8i80mvPXqMc9DqAAfRKaQ9stj0AaFRV1RyfBiRrc0My71pbCgrsKgpcYBQLccJvuJbGBft4uLyfvlqeOmPmWO62dEjq4w5Zo24YRmNL4M6z9dkUYMvzdTR6fQhUb3j8XaOAKjCvZqKF_3PgDOt_nFKWfcMUDYsrx_IVVlBweDZB7-5DhR4uHzlQ4DbpvjAh7NnmVz523rUELZnBFfEWXUMoshHWAPQUFzMteT7RCd5zTdZuvLlhtxtd7jfXBSIhOJdYyuiHq0iDxqNO72BXiCe0" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://ashpublications.org/bloodadvances/article/7/20/6325/494606/Defining-a-cohort-of-anemia-activated-cis-elements?guestAccessKey=" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
         <div class="pub-item fade-in fade-in-delay-1" data-year="2022">
           <div class="pub-year">2022</div>
           <div class="pub-content">
-            <div class="pub-title">Comparative single-cell transcriptomics of pulmonary fibrosis identifies conserved and species-specific disease programs</div>
-            <div class="pub-authors">Patel S, Brown C, Hewitt J, Nguyen T, Lee W</div>
-            <div class="pub-journal">JCI Insight, 7(14): e157892</div>
+            <div class="pub-title">Functional requirements for a Samd14-capping protein complex in stress erythropoiesis</div>
+            <div class="pub-authors">Suhita Ray*, Linda Chee, Yichao Zhou, Meg A Schaefer, Michael J Naldrett, Sophie Alvarez, Nicholas T Woods, Kyle J Hewitt</div>
+            <div class="pub-journal">eLife</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://elifesciences.org/articles/76497" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://elifesciences.org/articles/76497" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
-        <!-- 2021 -->
-        <div class="pub-item fade-in" data-year="2021">
-          <div class="pub-year">2021</div>
+        <!-- 2022 -->
+        <div class="pub-item fade-in" data-year="2020">
+          <div class="pub-year">2020</div>
           <div class="pub-content">
-            <div class="pub-title">Cell-type-specific transcriptional regulation of the RAAS pathway in hypertensive cardiac hypertrophy</div>
-            <div class="pub-authors">Hewitt J, Kim J, Martinez L, Andersen P</div>
-            <div class="pub-journal">Cardiovascular Research, 117(8): 1897-1911</div>
+            <div class="pub-title">Sterile α-motif domain requirement for cellular signaling and survival</div>
+            <div class="pub-authors">Suhita Ray*, Linda Chee, Daniel R. Matson, Nick Y. Palermo, Emery H. Bresnick, Kyle J. Hewitt</div>
+            <div class="pub-journal">JBC</div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn btn--primary btn--sm">PDF</a>
-            <a href="#" class="btn btn--outline btn--sm">DOI</a>
+            <a href="https://www.jbc.org/action/showPdf?pii=S0021-9258%2817%2948211-1" class="btn btn--primary btn--sm">PDF</a>
+            <a href="https://www.jbc.org/article/S0021-9258(17)48211-1/fulltext" class="btn btn--outline btn--sm">DOI</a>
           </div>
         </div>
 
@@ -246,8 +230,8 @@
         </div>
         <div class="footer-col"><h4>Navigation</h4><ul>
           <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li>
-          <li><a href="tools.html">Tools &amp; Technologies</a></li><li><a href="publications.html">Publications</a></li>
-          <li><a href="team.html">Lab Members</a></li><li><a href="news.html" class="nav-link">News</a><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="tools.html">Tools &amp; Technologies</a></li><li><a href="publications.html">Publications</a></li> -->
+          <li><a href="team.html">Lab Members</a></li><li><a href="news.html" >News</a></li><li><a href="contact.html">Contact</a></li>
         </ul></div>
         <div class="footer-col"><h4>External Profiles</h4><ul>
           <li><a href="https://scholar.google.com/citations?user=3w68aUcAAAAJ&hl=en" target="_blank">Google Scholar</a></li>

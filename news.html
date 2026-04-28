@@ -25,7 +25,7 @@
       <nav class="header-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="research.html" class="nav-link">Research</a>
-        <a href="tools.html" class="nav-link">Tools &amp; Technologies</a>
+        <!-- <a href="tools.html" class="nav-link">Tools &amp; Technologies</a> -->
         <a href="publications.html" class="nav-link">Publications</a>
         <a href="team.html" class="nav-link">Lab Members</a>
         <a href="news.html" class="nav-link active">News</a>
@@ -43,7 +43,7 @@
   <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
     <a href="index.html"      class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
     <a href="research.html"   class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Research</a>
-    <a href="tools.html"      class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a>
+    <!-- <a href="tools.html"      class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a> -->
     <a href="publications.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Publications</a>
     <a href="team.html"       class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
     <a href="news.html"       class="nav-link active" style="font-size:1.1rem;color:white">News</a>
@@ -58,10 +58,10 @@
     <div class="container page-hero-inner">
       <span class="page-hero-label">What We Have Been Up To</span>
       <h1 class="page-hero-title">Lab News &amp; Announcements</h1>
-      <p class="page-hero-desc">
+      <!-- <p class="page-hero-desc"> 
         Stay up to date with the latest publications, software releases, awards,
         team updates, and events from the Hewitt Lab.
-      </p>
+      </p>-->
     </div>
   </section>
 
@@ -89,7 +89,7 @@
             <!-- <span>&#9202; 4 min read</span> -->
           </div>
           <h2 class="news-featured-title">
-            New Study Identifies Disease-Associated Fibroblast Subpopulation in Human Heart Failure Using snRNA-seq
+            A stress-induced PI3P complex controls autophagy in erythroid precursors
           </h2>
           <p class="news-featured-excerpt">
             Our latest study identifies that Samd14 acts as a brake on excessive autophagy in anemia stress. These 
@@ -117,215 +117,6 @@
         <button class="filter-btn" data-cat="media">Media</button>
       </div>
 
-      <!-- ============================================================
-           NEWS GRID
-      ============================================================ -->
-      <div class="news-grid" id="newsGrid">
-
-        <!-- Card 1 -->
-        <article class="news-card fade-in" data-cat="award">
-          <!-- PLACEHOLDER: Replace with public/news-grant-nih.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80"
-            alt="NIH grant award"
-            class="news-card-img"
-          />
-          <div class="news-card-body">
-            <span class="news-category-badge badge--award" style="margin-bottom:0.75rem;">&#127942; Award</span>
-            <h3 class="news-card-title">
-              NIH R01 Awarded for Spatial Transcriptomics Study of Pulmonary Arterial Hypertension
-            </h3>
-            <p class="news-card-excerpt">
-              We are thrilled to receive a new NIH R01 grant from the NHLBI to investigate
-              vascular lesion formation in PAH using spatial transcriptomics and cell-cell
-              communication modeling over a 5-year award period.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; March 2025</span>
-            <a href="#" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Read more &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="news-card fade-in fade-in-delay-1" data-cat="software">
-          <!-- PLACEHOLDER: Replace with public/news-hewittipe-v2.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
-            alt="Software release"
-            class="news-card-img"
-          />
-          <div class="news-card-body">
-            <span class="news-category-badge badge--software" style="margin-bottom:0.75rem;">&#128187; Software</span>
-            <h3 class="news-card-title">
-              HewittPipe v2.0 Released with Improved Doublet Detection and Ambient RNA Correction
-            </h3>
-            <p class="news-card-excerpt">
-              Version 2.0 of our flagship single-cell pipeline introduces SoupX-based
-              ambient RNA correction, an updated Scrublet integration, and automated
-              cluster QC reporting. Available now on GitHub and PyPI.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; February 2025</span>
-            <a href="tools.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">See tools &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="news-card fade-in fade-in-delay-2" data-cat="team">
-          <div class="news-card-img-placeholder">&#127881;</div>
-          <div class="news-card-body">
-            <span class="news-category-badge badge--team" style="margin-bottom:0.75rem;">&#128100; Team News</span>
-            <h3 class="news-card-title">
-              Dr. [Name] Joins the Lab as a New Postdoctoral Fellow in Spatial Genomics
-            </h3>
-            <p class="news-card-excerpt">
-              We warmly welcome Dr. [Name] to the Hewitt Lab. Dr. [Name] completed their
-              PhD at [Institution] and brings expertise in spatial transcriptomics and
-              computational imaging to our pulmonary disease program.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; January 2025</span>
-            <a href="team.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Meet the team &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="news-card fade-in" data-cat="event">
-          <!-- PLACEHOLDER: Replace with public/news-conference.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
-            alt="Conference presentation"
-            class="news-card-img"
-          />
-          <div class="news-card-body">
-            <span class="news-category-badge badge--event" style="margin-bottom:0.75rem;">&#127897; Talk</span>
-            <h3 class="news-card-title">
-              Lab Presents at the American Heart Association Scientific Sessions 2024
-            </h3>
-            <p class="news-card-excerpt">
-              [PI Name] delivered an invited oral presentation on single-cell landscapes
-              of cardiac fibrosis at the AHA Scientific Sessions in Chicago, with three
-              lab members presenting posters on ongoing projects.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; November 2024</span>
-            <a href="#" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Read more &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="news-card fade-in fade-in-delay-1" data-cat="publication">
-          <!-- PLACEHOLDER: Replace with public/news-spatial-pub.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
-            alt="Spatial transcriptomics publication"
-            class="news-card-img"
-          />
-          <div class="news-card-body">
-            <span class="news-category-badge badge--publication" style="margin-bottom:0.75rem;">&#128196; Publication</span>
-            <h3 class="news-card-title">
-              Spatial Transcriptomics Paper Published in Circulation Reveals PAH Vascular Programs
-            </h3>
-            <p class="news-card-excerpt">
-              Our study using 10x Visium profiling of human PAH lung tissue identifies
-              spatially resolved gene expression programs within plexiform lesions, now
-              published in Circulation.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; October 2024</span>
-            <a href="publications.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">See publications &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="news-card fade-in fade-in-delay-2" data-cat="award">
-          <div class="news-card-img-placeholder">&#127891;</div>
-          <div class="news-card-body">
-            <span class="news-category-badge badge--award" style="margin-bottom:0.75rem;">&#127942; Award</span>
-            <h3 class="news-card-title">
-              [PhD Student Name] Receives Graduate Research Excellence Award from UNMC
-            </h3>
-            <p class="news-card-excerpt">
-              Congratulations to [Student Name], whose dissertation research on epigenomic
-              regulation of cardiac fibroblasts has been recognized with UNMC's annual
-              Graduate Research Excellence Award.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; September 2024</span>
-            <a href="team.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Meet the team &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 7 -->
-        <article class="news-card fade-in" data-cat="media">
-          <div class="news-card-img-placeholder">&#128251;</div>
-          <div class="news-card-body">
-            <span class="news-category-badge badge--media" style="margin-bottom:0.75rem;">&#128249; Media</span>
-            <h3 class="news-card-title">
-              UNMC Today Features Lab Research on Single-Cell Genomics in Heart Disease
-            </h3>
-            <p class="news-card-excerpt">
-              UNMC's institutional news outlet published a feature story on our research
-              into the molecular underpinnings of heart failure, highlighting the use
-              of single-nucleus RNA sequencing in human cardiac tissue.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; August 2024</span>
-            <a href="#" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Read article &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 8 -->
-        <article class="news-card fade-in fade-in-delay-1" data-cat="software">
-          <div class="news-card-img-placeholder">&#128202;</div>
-          <div class="news-card-body">
-            <span class="news-category-badge badge--software" style="margin-bottom:0.75rem;">&#128187; Software</span>
-            <h3 class="news-card-title">
-              CardioAtlas v1.3 Adds Expanded Reference Cell Types and Improved Label Transfer
-            </h3>
-            <p class="news-card-excerpt">
-              Our human cardiac single-cell reference atlas has been updated with 14 new
-              annotated cell type clusters from three additional donor cohorts, improving
-              coverage of rare immune and stromal populations.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; July 2024</span>
-            <a href="tools.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">See tools &#8594;</a>
-          </div>
-        </article>
-
-        <!-- Card 9 -->
-        <article class="news-card fade-in fade-in-delay-2" data-cat="event">
-          <!-- PLACEHOLDER: Replace with public/news-workshop.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80"
-            alt="Workshop or training event"
-            class="news-card-img"
-          />
-          <div class="news-card-body">
-            <span class="news-category-badge badge--event" style="margin-bottom:0.75rem;">&#127897; Event</span>
-            <h3 class="news-card-title">
-              Lab Hosts Single-Cell Genomics Workshop for UNMC Graduate Students and Postdocs
-            </h3>
-            <p class="news-card-excerpt">
-              We hosted a two-day hands-on workshop covering the fundamentals of
-              single-cell RNA-seq analysis, from raw data processing to biological
-              interpretation, attended by 28 trainees across UNMC departments.
-            </p>
-          </div>
-          <div class="news-card-footer">
-            <span class="news-meta" style="margin:0; font-size:0.75rem;">&#128197; May 2024</span>
-            <a href="contact.html" style="font-size:0.82rem; font-weight:600; color:var(--teal-dark);">Contact us &#8594;</a>
-          </div>
-        </article>
 
       </div><!-- /news-grid -->
 
@@ -345,7 +136,7 @@
     <div class="container">
       <div style="display:grid; grid-template-columns:1fr 340px; gap:4rem; align-items:flex-start;">
 
-        <!-- Archive list -->
+        <!-- Archive list 
         <div>
           <span class="section-label">All Updates</span>
           <h2 class="section-title" style="margin-bottom:1.75rem;">Full Archive</h2>
@@ -460,12 +251,12 @@
                 <div class="news-archive-title"><a href="#" style="color:var(--navy);">Lab hosts two-day scRNA-seq workshop for UNMC trainees</a></div>
                 <div class="news-archive-cat">&#127897; Event</div>
               </div>
-            </div>
+            </div>-->
 
           </div>
         </div>
 
-        <!-- Sidebar: quick stats + social -->
+        <!-- Sidebar: quick stats + social 
         <div>
           <div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:2rem; margin-bottom:1.5rem;">
             <h3 style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:1.25rem;">2024-2025 Highlights</h3>
@@ -521,7 +312,7 @@
 
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- ============================================================
        NEWSLETTER STRIP
@@ -530,28 +321,33 @@
     <div class="container">
       <div class="newsletter-strip fade-in">
         <div class="newsletter-text">
+          <!--  
           <h2>Stay in the Loop</h2>
           <p>
             Subscribe to receive occasional updates on new publications, software releases,
             and open positions from the Hewitt Lab.
           </p>
         </div>
+        -->
         <form class="newsletter-form" id="newsletterForm" novalidate>
+          <!--  
           <input
             type="email"
             class="newsletter-input"
             placeholder="your@email.edu"
             id="newsletterEmail"
             required
-          />
-          <button type="submit" class="btn btn--primary">Subscribe</button>
+          />-->
+          <!-- <button type="submit" class="btn btn--primary">Subscribe</button> -->
         </form>
       </div>
       <div id="newsletterSuccess" style="display:none; margin-top:1rem; text-align:center; font-size:0.88rem; color:var(--teal-dark);">
         &#10003; You are subscribed. We will be in touch with updates.
+      
       </div>
     </div>
   </section>
+  
 
   <!-- ============================================================
        FOOTER
@@ -561,15 +357,13 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="header-logo" style="margin-bottom:1rem; display:inline-flex;">
-            <div class="logo-mark">
-              <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg>
-            </div>
+
             <div class="logo-text">
               <span class="logo-name">Hewitt Lab</span>
               <span class="logo-sub">UNMC</span>
             </div>
           </a>
-          <p class="footer-tagline">Integrative computational biology for cardiac and pulmonary disease research at UNMC.</p>
+          <!-- <p class="footer-tagline">Integrative computational biology for cardiac and pulmonary disease research at UNMC.</p> -->
         </div>
 
         <div class="footer-col">
@@ -577,7 +371,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="tools.html">Tools &amp; Technologies</a></li>
+            <!-- <li><a href="tools.html">Tools &amp; Technologies</a></li> -->
             <li><a href="publications.html">Publications</a></li>
             <li><a href="team.html">Lab Members</a></li>
             <li><a href="news.html">News</a></li>
@@ -590,7 +384,7 @@
           <ul>
             <li><a href="news.html">Publications</a></li>
             <li><a href="news.html">Awards &amp; Grants</a></li>
-            <li><a href="news.html">Software Releases</a></li>
+            <!-- <li><a href="news.html">Software Releases</a></li> -->
             <li><a href="news.html">Events &amp; Talks</a></li>
             <li><a href="news.html">Team Updates</a></li>
           </ul>

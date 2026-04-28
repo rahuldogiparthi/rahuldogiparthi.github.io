@@ -22,7 +22,7 @@
       <nav class="header-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="research.html" class="nav-link active">Research</a>
-        <a href="tools.html" class="nav-link">Tools &amp; Technologies</a>
+        <!-- <a href="tools.html" class="nav-link">Tools &amp; Technologies</a> -->
         <a href="publications.html" class="nav-link">Publications</a>
         <a href="team.html" class="nav-link">Lab Members</a>
         <a href="news.html" class="nav-link">News</a>
@@ -39,7 +39,7 @@
   <div class="mobile-nav" id="mobileNav" style="display:none; position:fixed; inset:0; background:var(--navy); z-index:999; flex-direction:column; align-items:flex-start; padding:6rem 2rem 2rem; gap:0.5rem;">
     <a href="index.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Home</a>
     <a href="research.html" class="nav-link active" style="font-size:1.1rem;color:white">Research</a>
-    <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a>
+    <!-- <a href="tools.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Tools &amp; Technologies</a> -->
     <a href="publications.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Publications</a>
     <a href="team.html" class="nav-link" style="font-size:1.1rem;color:rgba(255,255,255,0.8)">Lab Members</a>
     <a href="news.html" class="nav-link">News</a>
@@ -95,13 +95,13 @@
       </div>
 -->
       <!-- Research Areas -->
-      <div id="cardiac" class="research-area fade-in">
-        <div class="research-area-img" style="width:fit-content;">
+      <div id="ra1" class="research-area fade-in">
+        <div class="research-area-img" style="width:auto;">
           <!-- PLACEHOLDER: Replace with public/research-cardiac.jpg -->
           <img
             src="public/prj2.png"
             alt="Cardiac tissue research"
-            style="width:auto; height: auto;object-fit:cover; border-radius:20px;"
+            style="width: auto; height: auto;object-fit:cover; border-radius:20px;"
           />
 
         </div>
@@ -133,11 +133,11 @@
         </div>
       </div>
 
-      <div id="cardiac" class="research-area fade-in">
+      <div id="ra2" class="research-area fade-in">
         <div class="research-area-img" style="width:fit-content;">
           <!-- PLACEHOLDER: Replace with public/research-cardiac.jpg -->
           <img
-            src="public/prj1.png"
+            src="public/prj3.png"
             alt="Cardiac tissue research"
             style="width:auto; height: auto;object-fit:cover; border-radius:20px;"
           />
@@ -145,28 +145,58 @@
         </div>
         <div class="research-area-text">
           <span class="tag">Research Area 02</span>
-          <h2>Cardiac Genomics and Heart Failure</h2>
+          <h2>The coordination of cell signaling to regulate transcriptional activation and progenitor activities in anemia and leukemia.</h2>
           <p>
-            Heart failure remains a leading cause of morbidity and mortality worldwide.
-            Our lab leverages single-nucleus RNA sequencing (snRNA-seq) and ATAC-seq
-            to profile the transcriptional and chromatin accessibility landscape across
-            all major cell types of the human heart.
+            The Samd14 gene and protein are upregulated in several acute/chronic anemia contexts (Fig 2A), but its precise functional roles are unknown. 
           </p>
           <p>
-            We are particularly interested in how cardiomyocytes, fibroblasts,
-            endothelial cells, and immune populations respond to pressure overload
-            and ischemic injury, and how intercellular communication networks become
-            dysregulated in the failing myocardium.
+            We are investigating how Samd14 coordinates cell signaling during the process of anemia recovery through oncogenic cell signaling pathways that drive progenitor activity.
           </p>
           <div class="method-list">
-            <span class="tag">snRNA-seq</span>
-            <span class="tag">snATAC-seq</span>
-            <span class="tag">Cell-cell Signaling</span>
-            <span class="tag">Trajectory Analysis</span>
-            <span class="tag">Heart Failure Models</span>
+            <span class="tag">Phosphoproteomics</span>
+            <span class="tag">Transplant Assays</span>
+            <span class="tag">PIP Strip</span>
+            <span class="tag">Flow Cytommetry</span>
+            <span class="tag">Rescue Assays</span>
           </div>
         </div>
       </div>
+      <div id="ra3" class="research-area fade-in">
+        <div class="research-area-img" style="width:fit-content;">
+          <!-- PLACEHOLDER: Replace with public/research-cardiac.jpg -->
+          <img
+            src="public/prj4.png"
+            alt="Cardiac tissue research"
+            style="width:auto; height: auto;object-fit:cover; border-radius:20px;"
+          />
+
+        </div>
+        <div class="research-area-text">
+          <span class="tag">Research Area 03</span>
+          <h2>Determining cis-regulatory control mechanisms in erythroid regeneration</h2>
+          <p>
+            Anemia-activated cis-elements are controlled by GATA factors. During red blood cell regeneration, 
+            a Kit+, GATA2-expressing population of self-renewing erythroid-restricted cells rapidly expand 
+            and differentiate. The GATA family of transcription factors function to activate/repress complex 
+            genetic circuits. A GATA-occupied cis-element at the Samd14 locus (S14E) was required for survival 
+            in anemia.
+          </p>
+          <p>
+            A GATA2-Samd14-Kit axis regulates erythroid regeneration, and SAMD14 dysregulation may have pathogenic 
+            consequences. Using the sequence/molecular properties of the S14E anemia-activated enhancer as a guide, 
+            we also described similar anemia-dependent enhancer activities at the Ssx2ip locus, encoding a gene 
+            upregulated in leukemia and predicted to control centromere assembly.
+          </p>
+          <div class="method-list">
+            <span class="tag">CRISPR/Cas9</span>
+            <span class="tag">Cell Cycle</span>
+            <span class="tag">Cell Signaling</span>
+            <span class="tag">Colony Forming Assays</span>
+            <span class="tag">scRNA-seq</span>
+          </div>
+        </div>
+      </div>
+<!--  
       <div id="pulmonary" class="research-area fade-in">
         <div class="research-area-text">
           <img
@@ -195,8 +225,9 @@
             <span class="tag">Vascular Biology</span>
           </div>
         </div>
-        <div class="research-area-img">
+        <div class="research-area-img"> -->
           <!-- PLACEHOLDER: Replace with public/research-pulmonary.jpg -->
+          <!--  
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
             alt="Pulmonary research"
@@ -205,8 +236,9 @@
       </div>
 
       <div id="methods" class="research-area fade-in">
-        <div class="research-area-img">
+        <div class="research-area-img"> -->
           <!-- PLACEHOLDER: Replace with public/research-computational.jpg -->
+          <!--  
           <img
             src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
             alt="Computational biology and data science"
@@ -263,18 +295,20 @@
             <span class="tag">Nebraska Medicine</span>
           </div>
         </div>
-        <div class="research-area-img">
+        <div class="research-area-img"> -->
           <!-- PLACEHOLDER: Replace with public/research-translational.jpg -->
+          <!--  
           <img
             src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=800&q=80"
             alt="Translational research and clinical collaboration"
-          />
+          /> -->
         </div>
       </div>
     </div>
   </section>
 
   <!-- Collaborators -->
+  <!--  
   <section class="section section--tint">
     <div class="container">
       <div class="text-center" style="max-width:560px; margin:0 auto 3rem;">
@@ -303,7 +337,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- CTA -->
   <section class="section section--light">
@@ -327,32 +361,31 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="header-logo" style="margin-bottom:1rem; display:inline-flex;">
-            <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg></div>
+            <!-- <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z" fill="white"/></svg></div> -->
             <div class="logo-text"><span class="logo-name">Hewitt Lab</span><span class="logo-sub">UNMC</span></div>
           </a>
-          <p class="footer-tagline">Integrative computational biology for cardiac and pulmonary disease research at UNMC.</p>
         </div>
         <div class="footer-col"><h4>Navigation</h4><ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="tools.html">Tools &amp; Technologies</a></li>
+          <!-- <li><a href="tools.html">Tools &amp; Technologies</a></li> -->
           <li><a href="publications.html">Publications</a></li>
           <li><a href="team.html">Lab Members</a></li>
-          <a href="news.html" class="nav-link">News</a>
+          <a href="news.html" >News</a>
           <li><a href="contact.html">Contact</a></li>
         </ul></div>
         <div class="footer-col"><h4>Research</h4><ul>
-          <li><a href="#cardiac">Cardiac Genomics</a></li>
-          <li><a href="#pulmonary">Pulmonary Disease</a></li>
-          <li><a href="#methods">Computational Methods</a></li>
-          <li><a href="#translational">Translational Research</a></li>
+          <li><a href="#ra1">GATA factor mechanisms</a></li>
+          <li><a href="#ra2">Samd14 Activities in Anemia</a></li>
+          <li><a href="#ra3">Erythroid Regeneration Mechanisms</a></li>
+          <!-- <li><a href="#translational">Translational Research</a></li> -->
         </ul></div>
         <div class="footer-col"><h4>Contact</h4>
-          <address>University of Nebraska<br/>Medical Center<br/>Omaha, NE 68198<br/><br/><a href="mailto:hewittlab@unmc.edu">hewittlab@unmc.edu</a></address>
+          <address>University of Nebraska<br/>Medical Center<br/>Omaha, NE 68198<br/><br/><a href="mailto:kyle.hewitt@unmc.edu">kyle.hewitt@unmc.edu</a></address>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2025 Hewitt Lab &ndash; University of Nebraska Medical Center.</span>
+        <span>&copy; 2026 Hewitt Lab &ndash; University of Nebraska Medical Center.</span>
         <div style="display:flex; gap:1.5rem;"><a href="#">Privacy Policy</a><a href="https://www.unmc.edu" target="_blank">UNMC.edu</a></div>
       </div>
     </div>
